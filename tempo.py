@@ -34,7 +34,7 @@ new_title = '<p style="font-family:sans-serif; color:Green; font-size: 42px;"</p
 st.markdown(new_title, unsafe_allow_html=True)
 st.dataframe(b,300,200)
 image = Image.open('b')
-st.image(image
+st.image('image')
 #st.markdown('-----')
 #st.dataframe(b['Milano'],300,200)
 #print(b)
