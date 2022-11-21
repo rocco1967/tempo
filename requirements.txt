@@ -1,4 +1,4 @@
-Pil
+Pillow
 pandas
 streamlit
 numpy
