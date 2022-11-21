@@ -31,7 +31,7 @@ b=(a.T)
 new_title = '<p style="font-family:sans-serif; color:Green; font-size: 42px;"</p>'
 st.markdown(new_title, unsafe_allow_html=True)
 st.dataframe(b['Gdynia'],400,100)
-st.markdown(........)
+st.markdown('-----')
 st.dataframe(b['Milano'],400,100)
 #print(b)
 #st.subheader((b['Gdynia']))
