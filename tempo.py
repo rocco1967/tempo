@@ -2,6 +2,7 @@ import requests
 import pandas as pd
 import numpy as np
 import streamlit as st
+st.set_page_config(layout="wide")
 #city_name = input("Enter the name of the City : ")
 dati1=[]
 url_list=('https://wttr.in/Gdynia?m&format=%t','https://wttr.in/Gdynia?format=%h',
