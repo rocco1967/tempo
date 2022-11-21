@@ -24,7 +24,7 @@ for url_list in url_list:
     np.array(dati1.append(dati))
     #np.append(print(requests.get(dati).text))
 #b=pd.DataFrame(np.array(dati1),columns=['TEMP','TEMP-PERCEPITA'])#,'UMIDITA^','ORA-LOCALE-DATI'])
-
+dati.close()
 #a=((pd.DataFrame((np.array(dati1).reshape(2,-1)),columns=['TEMP','UMIDITA^'])).T)#,columns=['Gdynia','Milano'])
 a=pd.DataFrame((np.array(dati1).reshape(-1,4)),columns=['temperatura','umidita^','temp-percepita','Sunset'],index=['Gdynia','Milano'])
 b=(a.T)
