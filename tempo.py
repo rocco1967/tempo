@@ -19,7 +19,7 @@ for url_list in url_list:
 #a=((pd.DataFrame((np.array(dati1).reshape(2,-1)),columns=['TEMP','UMIDITA^'])).T)#,columns=['Gdynia','Milano'])
 a=pd.DataFrame((np.array(dati1).reshape(-1,2)),columns=['temperatura','umidita^'],index=['Gdynia','Milano'])
 b=(a.T)
-st.write(b['Gdynia'],600,100)
+st.dataframe(b['Gdynia'],600,100)
 st.dataframe(b['Milano'],600,100)
 #print(b)
 #st.subheader((b['Gdynia']))
