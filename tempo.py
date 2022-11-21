@@ -17,8 +17,8 @@ st.markdown(
     unsafe_allow_html=True,
 )
 dati1=[]
-url_list=('https://wttr.in/Gdynia?m&format=%t','https://wttr.in/Gdynia?format=%h','https://wttr.in/Gdynia?format=%f'
-         'https://wttr.in/Milan?m&format=%t','https://wttr.in/Gdynia?format=%h','https://wttr.in/Milan?format=%f')
+url_list=('https://wttr.in/Gdynia?m&format=%t','https://wttr.in/Gdynia?format=%h','https://wttr.in/Gdynia?format=%f',
+         'https://wttr.in/Milan?m&format=%t','https://wttr.in/Milan?format=%h','https://wttr.in/Milan?format=%f')
 for url_list in url_list:
     dati=((requests.get(url_list).text))
     np.array(dati1.append(dati))
