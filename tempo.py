@@ -19,6 +19,8 @@ for url_list in url_list:
 #a=((pd.DataFrame((np.array(dati1).reshape(2,-1)),columns=['TEMP','UMIDITA^'])).T)#,columns=['Gdynia','Milano'])
 a=pd.DataFrame((np.array(dati1).reshape(-1,2)),columns=['temperatura','umidita^'],index=['Gdynia','Milano'])
 b=(a.T)
+new_title = '<p style="font-family:sans-serif; color:Green; font-size: 42px;"</p>'
+st.markdown(new_title, unsafe_allow_html=True)
 st.dataframe(b['Gdynia'],600,100)
 st.dataframe(b['Milano'],600,100)
 #print(b)
