@@ -26,7 +26,7 @@ for url_list in url_list:
 #b=pd.DataFrame(np.array(dati1),columns=['TEMP','TEMP-PERCEPITA'])#,'UMIDITA^','ORA-LOCALE-DATI'])
 
 #a=((pd.DataFrame((np.array(dati1).reshape(2,-1)),columns=['TEMP','UMIDITA^'])).T)#,columns=['Gdynia','Milano'])
-a=pd.DataFrame((np.array(dati1).reshape(-1,3)),columns=['temperatura','umidita^','temp-percepita],index=['Gdynia','Milano'])
+a=pd.DataFrame((np.array(dati1).reshape(-1,3)),columns=['temperatura','umidita^','temp-percepita'],index=['Gdynia','Milano'])
 b=(a.T)
 new_title = '<p style="font-family:sans-serif; color:Green; font-size: 42px;"</p>'
 st.markdown(new_title, unsafe_allow_html=True)
