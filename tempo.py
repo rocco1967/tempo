@@ -17,8 +17,8 @@ st.markdown(
     unsafe_allow_html=True,
 )
 dati1=[]
-url_list=('https://wttr.in/Gdynia?m&format=%t','https://wttr.in/Gdynia?format=%h','https://wttr.in/Gdynia?format=%f',
-         'https://wttr.in/Milan?m&format=%t','https://wttr.in/Milan?format=%h','https://wttr.in/Milan?format=%f')
+url_list=('https://wttr.in/Gdynia?m&format=%t','https://wttr.in/Gdynia?format=%h','https://wttr.in/Gdynia?m&format=%f',
+         'https://wttr.in/Milan?m&format=%t','https://wttr.in/Milan?format=%h','https://wttr.in/Milan?m&format=%f')
 for url_list in url_list:
     dati=((requests.get(url_list).text))
     np.array(dati1.append(dati))
@@ -30,9 +30,9 @@ a=pd.DataFrame((np.array(dati1).reshape(-1,3)),columns=['temperatura','umidita^'
 b=(a.T)
 new_title = '<p style="font-family:sans-serif; color:Green; font-size: 42px;"</p>'
 st.markdown(new_title, unsafe_allow_html=True)
-st.dataframe(b['Gdynia'],400,200)
+st.dataframe(b['Gdynia'],300,200)
 st.markdown('-----')
-st.dataframe(b['Milano'],400,200)
+st.dataframe(b['Milano'],300,200)
 #print(b)
 #st.subheader((b['Gdynia']))
              
