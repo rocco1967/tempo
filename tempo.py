@@ -7,10 +7,10 @@ st.markdown(
     """
     <style>
     textarea {
-        font-size: 2rem !important;
+        font-size: 3rem !important;
     }
     input {
-        font-size: 2rem !important;
+        font-size: 3rem !important;
     }
     </style>
     """,
