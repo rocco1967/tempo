@@ -17,8 +17,8 @@ st.markdown(
     unsafe_allow_html=True,
 )
 dati1=[]
-url_list=('https://wttr.in/Gdynia?m&format=%t','https://wttr.in/Gdynia?format=%h','https://wttr.in/Gdynia?m&format=%f',
-         'https://wttr.in/Milan?m&format=%t','https://wttr.in/Milan?format=%h','https://wttr.in/Milan?m&format=%f')
+url_list=('https://wttr.in/Gdynia?m&format=%t','https://wttr.in/Gdynia?format=%h','https://wttr.in/Gdynia?m&format=%f','https://wttr.in/Gdynia?format=%s',
+         'https://wttr.in/Milan?m&format=%t','https://wttr.in/Milan?format=%h','https://wttr.in/Milan?m&format=%f','https://wttr.in/Milan?format=%s',)
 for url_list in url_list:
     dati=((requests.get(url_list).text))
     np.array(dati1.append(dati))
@@ -26,7 +26,7 @@ for url_list in url_list:
 #b=pd.DataFrame(np.array(dati1),columns=['TEMP','TEMP-PERCEPITA'])#,'UMIDITA^','ORA-LOCALE-DATI'])
 
 #a=((pd.DataFrame((np.array(dati1).reshape(2,-1)),columns=['TEMP','UMIDITA^'])).T)#,columns=['Gdynia','Milano'])
-a=pd.DataFrame((np.array(dati1).reshape(-1,3)),columns=['temperatura','umidita^','temp-percepita'],index=['Gdynia','Milano'])
+a=pd.DataFrame((np.array(dati1).reshape(-1,4)),columns=['temperatura','umidita^','temp-percepita','Sunset'],index=['Gdynia','Milano'])
 b=(a.T)
 new_title = '<p style="font-family:sans-serif; color:Green; font-size: 42px;"</p>'
 st.markdown(new_title, unsafe_allow_html=True)
