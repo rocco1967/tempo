@@ -4,8 +4,8 @@ import numpy as np
 import streamlit as st
 #city_name = input("Enter the name of the City : ")
 dati1=[]
-url_list=('https://wttr.in/Gdynia?mformat=%t','https://wttr.in/Gdynia?format=%h',
-         'https://wttr.in/Milan?mformat=%t','https://wttr.in/Milan?format=%h')
+url_list=('https://wttr.in/Gdynia?m+format=%t','https://wttr.in/Gdynia?format=%h',
+         'https://wttr.in/Milan?m+format=%t','https://wttr.in/Milan?format=%h')
 for url_list in url_list:
     dati=((requests.get(url_list).text))
     np.array(dati1.append(dati))
