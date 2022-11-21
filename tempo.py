@@ -21,7 +21,7 @@ url_list=('https://wttr.in/Gdynia?m&format=%t','https://wttr.in/Gdynia?format=%h
          'https://wttr.in/Milan?m&format=%t','https://wttr.in/Milan?format=%h','https://wttr.in/Milan?m&format=%f','https://wttr.in/Milan?format=%s')
 for url_list in url_list:
     dati=((requests.get(url_list).text))
-    requests.close()
+    #requests.close()
     np.array(dati1.append(dati))
     #np.append(print(requests.get(dati).text))
 #b=pd.DataFrame(np.array(dati1),columns=['TEMP','TEMP-PERCEPITA'])#,'UMIDITA^','ORA-LOCALE-DATI'])
