@@ -3,10 +3,19 @@ import pandas as pd
 import numpy as np
 import streamlit as st
 #st.set_page_config(layout="center")
-#city_name = input("Enter the name of the City : ")
-st.markdown(""" <style> .font {
-font-size:150px;} 
-</style> """, unsafe_allow_html=True)
+st.markdown(
+    """
+    <style>
+    textarea {
+        font-size: 2rem !important;
+    }
+    input {
+        font-size: 2rem !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
 dati1=[]
 url_list=('https://wttr.in/Gdynia?m&format=%t','https://wttr.in/Gdynia?format=%h',
          'https://wttr.in/Milan?m&format=%t','https://wttr.in/Milan?format=%h')
