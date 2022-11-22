@@ -41,8 +41,8 @@ new_title = '<p style="font-family:sans-serif; color:Green; font-size: 42px;"</p
 #st.dataframe(b,300,200)########  originale
 b=(b.reset_index()).rename(columns={'index': 'dati'})##  nuovo
 #kwargs=dict{figsize:10,5}#(figsize=(10,5))
-b1=dataframe_to_image.convert(b,visualisation_library='matplotlib')
-#st.pyplot(dataframe_to_image.convert(b,visualisation_library='matplotlib'))####   originale
+#b1=dataframe_to_image.convert(b,visualisation_library='matplotlib')
+st.pyplot(dataframe_to_image.convert(b,visualisation_library='matplotlib'))####   originale
 #st.plotly_chart(dataframe_to_image.convert(b,visualisation_library='matplotlib'))####   originale
 
 
