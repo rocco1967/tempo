@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import streamlit as st
 from PIL import Image
-import matplotlib.pylot as plt
+import matplotlib.pyplot as plt
 #st.set_page_config(layout="center")
 st.markdown(
     """
