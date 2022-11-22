@@ -21,7 +21,7 @@ dati1=[]
 url_list=('https://wttr.in/Gdynia?m&format=%t','https://wttr.in/Gdynia?format=%h','https://wttr.in/Gdynia?m&format=%f','https://wttr.in/Gdynia?format=%s',
          'https://wttr.in/Milan?m&format=%t','https://wttr.in/Milan?format=%h','https://wttr.in/Milan?m&format=%f','https://wttr.in/Milan?format=%s')
 for url_list in url_list:
-    dati=((requests.get(url_list).text))
+    dati=((requests.get(url_list,timeout=0.5).text))
     #requests.close()
     np.array(dati1.append(dati))
     #np.append(print(requests.get(dati).text))
@@ -31,7 +31,7 @@ for url_list in url_list:
 a=pd.DataFrame((np.array(dati1).reshape(-1,4)),columns=['temperatura','umidita^','temp-percepita','Sunset'],index=['Gdynia','Milano'])
 b=(a.T)
 new_title = '<p style="font-family:sans-serif; color:Green; font-size: 42px;"</p>'
-st.markdown(new_title, unsafe_allow_html=True)
+#st.markdown(new_title, unsafe_allow_html=True)
 st.dataframe(b,300,200)
 #image = Image.open('b')
 #st.image('image')
