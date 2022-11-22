@@ -35,7 +35,7 @@ new_title = '<p style="font-family:sans-serif; color:Green; font-size: 42px;"</p
 #st.markdown(new_title, unsafe_allow_html=True)
 #st.dataframe(b,300,200)########  originale
 b=(b.reset_index()).rename(columns={'index': 'dati'})##  nuovo
-dataframe_to_image.convert(b,visualisation_library='matplotlib')
+st.image(dataframe_to_image.convert(b,visualisation_library='matplotlib'))
 #image = Image.open('b')
 #st.image('image')
 #st.markdown('-----')
