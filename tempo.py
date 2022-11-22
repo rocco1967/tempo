@@ -21,7 +21,7 @@ dati1=[]
 url_list=('https://wttr.in/Gdynia?m&format=%t&period=60','https://wttr.in/Gdynia?format=%h','https://wttr.in/Gdynia?m&format=%f','https://wttr.in/Gdynia?format=%s',
          'https://wttr.in/Milan?m&format=%t&period=60','https://wttr.in/Milan?format=%h','https://wttr.in/Milan?m&format=%f','https://wttr.in/Milan?format=%s')
 for url_list in url_list:
-    dati=((requests.get(url_list).text))
+    dati=((requests.get(url_list,headers={'Connection':'close'}).text))
     #requests.close()
     np.array(dati1.append(dati))
     #np.append(print(requests.get(dati).text))
