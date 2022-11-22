@@ -4,3 +4,4 @@ streamlit
 numpy
 requests
 dataframe-to-image
+matplotlib
