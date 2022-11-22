@@ -5,6 +5,7 @@ import streamlit as st
 from PIL import Image
 import matplotlib.pyplot as plt
 from dataframe_to_image import dataframe_to_image
+st.set_option('deprecation.showPyplotGlobalUse', False)
 #st.set_page_config(layout="center")
 st.markdown(
     """
