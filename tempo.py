@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import streamlit as st
 from PIL import Image
+import matplotlib.pylot as plt
 #st.set_page_config(layout="center")
 st.markdown(
     """
@@ -32,7 +33,9 @@ a=pd.DataFrame((np.array(dati1).reshape(-1,4)),columns=['temperatura','umidita^'
 b=(a.T)
 new_title = '<p style="font-family:sans-serif; color:Green; font-size: 42px;"</p>'
 #st.markdown(new_title, unsafe_allow_html=True)
-st.dataframe(b,300,200)
+#st.dataframe(b,300,200)########  originale
+b=(b.reset_index()).rename(columns={'index': 'dati'})##  nuovo
+dataframe_to_image.convert(b,visualisation_library='matplotlib')
 #image = Image.open('b')
 #st.image('image')
 #st.markdown('-----')
