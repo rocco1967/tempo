@@ -41,7 +41,7 @@ new_title = '<p style="font-family:sans-serif; color:Green; font-size: 42px;"</p
 #st.dataframe(b,300,200)########  originale
 b=(b.reset_index()).rename(columns={'index': 'dati'})##  nuovo
 #kwargs=dict{figsize:10,5}#(figsize=(10,5))
-st.pyplot((dataframe_to_image.convert(b,visualisation_library='matplotlib')))
+st.pyplot(dataframe_to_image.convert(b,visualisation_library='matplotlib'))
 
 #image = Image.open('b')
 #st.image('image')
