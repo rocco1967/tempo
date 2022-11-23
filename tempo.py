@@ -9,7 +9,7 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 image1 = Image.open('gdynia.jpg')
 image2= Image.open('milano.jpg')
 st.image(image1)
-st.image(image2
+st.image(image2)
 #st.set_page_config(layout="center")
 st.markdown(
     """
