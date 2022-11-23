@@ -28,8 +28,8 @@ dati1=[]
 url_list=('https://wttr.in/Gdynia?m&format=%t&period=5','https://wttr.in/Gdynia?format=%h&period=5','https://wttr.in/Gdynia?m&format=%f&','https://wttr.in/Gdynia?format=%s',
           'https://wttr.in/Gdynia?format=%S',
           
-         'https://wttr.in/Milano?m&format=%t&period=5','https://wttr.in/Milano?format=%h&period=5','https://wttr.in/Milano?m&format=%f','https://wttr.in/Milano?format=%s',
-         'https://wttr.in/Milano?format=%S')
+         'https://wttr.in/Milan?m&format=%t&period=5','https://wttr.in/Milan?format=%h&period=5','https://wttr.in/Milan?m&format=%f','https://wttr.in/Milan?format=%s',
+         'https://wttr.in/Milan?format=%S')
 for url_list in url_list:
     dati=((requests.get(url_list,timeout=2,headers={'Connection':'close'}).text))
     #requests.close()
