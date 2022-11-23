@@ -25,10 +25,10 @@ st.markdown(
     unsafe_allow_html=True,
 )
 dati1=[]
-url_list=('https://wttr.in/Gdynia?m&format=%t','https://wttr.in/Gdynia?format=%h','https://wttr.in/Gdynia?m&format=%f&','https://wttr.in/Gdynia?format=%s',
+url_list=('https://wttr.in/Gdynia?m&format=%t&period=5','https://wttr.in/Gdynia?format=%h&period=5','https://wttr.in/Gdynia?m&format=%f&','https://wttr.in/Gdynia?format=%s',
           'https://wttr.in/Gdynia?format=%S',
           
-         'https://wttr.in/Milan?m&format=%t','https://wttr.in/Milan?format=%h','https://wttr.in/Milan?m&format=%f','https://wttr.in/Milan?format=%s',
+         'https://wttr.in/Milan?m&format=%t&period=5','https://wttr.in/Milan?format=%h&period=5','https://wttr.in/Milan?m&format=%f','https://wttr.in/Milan?format=%s',
          'https://wttr.in/Milan?format=%S')
 for url_list in url_list:
     dati=((requests.get(url_list,timeout=2,headers={'Connection':'close'}).text))
