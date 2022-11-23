@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 from dataframe_to_image import dataframe_to_image
 st.set_option('deprecation.showPyplotGlobalUse', False)
 image1 = Image.open('gdynia.JPG')
-image2= Image.open('milano.jpg')
+image2= Image.open('milano.JPG')
 st.image(image1)
 st.image(image2
 #st.set_page_config(layout="center")
