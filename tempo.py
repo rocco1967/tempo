@@ -52,12 +52,12 @@ b2=b[['Milano']]
 col1, col2 = st.columns(2)
 with col1:
    st.header("Gdynia")
-   image1=image1.resize(400,300)
+   image1=image1.resize((400,300))
    st.image(image1)
    st.pyplot(dataframe_to_image.convert(b1,visualisation_library='matplotlib'))####   originale
 with col2:
    st.header("Milano")
-   image2=image2.resize(400,300) 
+   image2=image2.resize((400,300)) 
    st.image(image2)
    st.pyplot(dataframe_to_image.convert(b2,visualisation_library='matplotlib'))####   originale
     
