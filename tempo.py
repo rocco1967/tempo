@@ -6,8 +6,8 @@ from PIL import Image
 import matplotlib.pyplot as plt
 from dataframe_to_image import dataframe_to_image
 st.set_option('deprecation.showPyplotGlobalUse', False)
-image1 = Image.open('gdynia.JPG')
-image2= Image.open('milano.JPG')
+image1 = Image.open('gdynia.jpg')
+image2= Image.open('milano.jpg')
 st.image(image1)
 st.image(image2
 #st.set_page_config(layout="center")
@@ -46,7 +46,7 @@ new_title = '<p style="font-family:sans-serif; color:Green; font-size: 42px;"</p
 b=(b.reset_index()).rename(columns={'index': 'dati'})##  nuovo
 #kwargs=dict{figsize:10,5}#(figsize=(10,5))
 #b1=dataframe_to_image.convert(b,visualisation_library='matplotlib')
-#st.pyplot(dataframe_to_image.convert(b,visualisation_library='matplotlib'))####   originale
+st.pyplot(dataframe_to_image.convert(b,visualisation_library='matplotlib'))####   originale
 #st.plotly_chart(dataframe_to_image.convert(b,visualisation_library='matplotlib'))####   originale
 
 
