@@ -51,7 +51,7 @@ b2=b[['dati','Milano']]
 
 col1, col2 = st.columns(2)
 with col1:
-   st.header("Gdynia")
+   st.header("-----Gdynia----")
    image1=image1.resize((400,300))
    st.image(image1)
    st.pyplot(dataframe_to_image.convert(b1,visualisation_library='matplotlib'))####   originale
