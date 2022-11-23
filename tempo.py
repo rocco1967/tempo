@@ -8,8 +8,8 @@ from dataframe_to_image import dataframe_to_image
 st.set_option('deprecation.showPyplotGlobalUse', False)
 image1 = Image.open('gdynia.JPG')
 image2= Image.open('milano.JPG')
-st.image(image1)
-st.image(image2)
+#st.image(image1)
+#st.image(image2)
 #st.set_page_config(layout="center")
 st.markdown(
     """
@@ -48,8 +48,20 @@ b1=b[['Gdynia']]
 b2=b[['Milano']]
 #kwargs=dict{figsize:10,5}#(figsize=(10,5))
 #b1=dataframe_to_image.convert(b,visualisation_library='matplotlib')
-st.pyplot(dataframe_to_image.convert(b1,visualisation_library='matplotlib'))####   originale
-st.pyplot(dataframe_to_image.convert(b2,visualisation_library='matplotlib'))####   originale
+
+col1, col2 = st.columns(2)
+with col1:
+   st.header("Gdynia")
+   st.image(image1)
+   st.pyplot(dataframe_to_image.convert(b1,visualisation_library='matplotlib'))####   originale
+with col2:
+   st.header("Milano")
+   st.image(image2)
+   st.pyplot(dataframe_to_image.convert(b2,visualisation_library='matplotlib'))####   originale
+    
+
+#st.pyplot(dataframe_to_image.convert(b1,visualisation_library='matplotlib'))####   originale
+#st.pyplot(dataframe_to_image.convert(b2,visualisation_library='matplotlib'))####   originale
 #st.plotly_chart(dataframe_to_image.convert(b,visualisation_library='matplotlib'))####   originale
 
 
